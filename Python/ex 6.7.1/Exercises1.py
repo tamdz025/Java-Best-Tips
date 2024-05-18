@@ -40,16 +40,16 @@ def show_menu(menu):
 
 
 if __name__ == '__main__':
-    file = 'breakfast.xml'
+    file = 'id.xml'
     breakfast_menu = parse_xml(file)
     print('====================================')
-    print('==> Danh sách các món ăn sáng: ')
+    print('==> ID_HERO: ')
     show_menu(breakfast_menu)
     print('====================================')
-    print('==> Danh sách các món ăn theo giá tăng dần: ')
+    print('==> ID_SKIN: ')
     breakfast_menu.sort(key=lambda x: x.price)
     show_menu(breakfast_menu)
     print('====================================')
-    print('==> Danh sách các món ăn theo lượng calo giảm dần: ')
+    print('==> MOD: ')
     breakfast_menu.sort(key=lambda x: x.calo, reverse=True)
     show_menu(breakfast_menu)
